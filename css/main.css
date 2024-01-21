@@ -1,0 +1,102 @@
+:root{
+    --main-color:#D62E33;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+  }
+.min-vh-80{
+min-height: 80vh;
+}
+/* *=====================>NavBar<========================= */
+#mySidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px; 
+  }
+
+  #mySidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+
+  #mySidenav a:hover {
+    color: #c51f1f;
+  }
+
+
+/* ^--------------------->Header<---------------------------------- */
+header{
+    background-image: linear-gradient(#d62e3399,#d62e3399),url(../images/events-heavenly-header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* *=====================>count<========================= */
+#count{
+    min-height: 40vh;
+    background-image: linear-gradient(#d62e3399,#d62e3399),url(../images/invitation-2508607__340.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* ^--------------------->singer accordion section<---------------------------------- */
+
+.accordion {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    text-align: center;
+    color: white;
+}
+
+.accordion-header {
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 23px;
+    font-weight: 500;
+    background-color: #d62e3399;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+    color: black;
+    background-color: #ccc;
+}
+
+/* ^--------------------->contact us section<---------------------------------- */
+.about-icon .icon{
+    color: #808080;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    border: 1px solid #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    margin-inline: 3px;
+}
+
+.about-icon li:hover .icon{
+    cursor: pointer;
+    color: white;
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route egy</title>
+    <link rel="stylesheet" href="css/icomoon.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <!--!=================>Navbar<============================  -->
+    <header class="min-vh-80 d-flex align-items-center">
+        <div id="main" class="text-white position-absolute">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open</span>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="#" class="closebtn text-end me-3 fs-2" onclick="closeNav()">&times;</a>
+            <a href="#header">Home</a>
+            <a href="#accordion">Duration</a>
+            <a href="#count">Details</a>
+            <a href="#contact-us">Contact</a>
+        </div>
+        <div class="content text-center w-100 text-white">
+            <h2 class="display-3">ُEgyption Party</h2>
+            <p>Let's have Fun</p>
+        </div>
+    </header>
+
+
+    <!--!=================>Accordion<============================  -->
+    <section id="accordion" class="py-5">
+        <div class="accordion py-5">
+            <div class="accordion-section">
+                <div class="accordion-header">ٍSinger one</div>
+                <div class="accordion-content">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </div>
+            </div>
+            <div class="accordion-section">
+                <div class="accordion-header">Singer two</div>
+                <div class="accordion-content">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                    aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                    nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                    velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                    voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                    laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
+                    ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+                    voluptas nulla pariatur?"</div>
+            </div>
+            <div class="accordion-section">
+                <div class="accordion-header">Singer three</div>
+                <div class="accordion-content">"But I must explain to you how all this mistaken idea of denouncing
+                    pleasure and praising pain was born and I will give you a complete account of the system, and
+                    expound the actual teachings of the great explorer of the truth, the master-builder of human
+                    happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because
+                    those who do not know how to pursue pleasure rationally encounter consequences that are extremely
+                    painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because
+                    it is pain, but because occasionally circumstances occur in which toil and pain can procure him some
+                    great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise,
+                    except to obtain some advantage from it? But who has any right to find fault with a man who chooses
+                    to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no
+                    resultant pleasure?"</div>
+            </div>
+            <div class="accordion-section">
+                <div class="accordion-header">Singer four</div>
+                <div class="accordion-content">"At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                    blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+                    sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia
+                    animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam
+                    libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+                    placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem
+                    quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates
+                    repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut
+                    aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores
+                    repellat."</div>
+            </div>
+        </div>
+    </section>
+        <!--!=================>Accordion<============================  -->
+        <section id="count" class="py-5 d-flex justify-content-center align-items-center text-center text-white">
+            <div class="container">
+                <div class="row gap-1">
+                    <div class="day col-lg-2 m-0 border p-4 fs-3 mx-auto text-center">
+                        <p class="m-0" id="days"></p>
+                    </div>
+                    <div class="hour col-lg-2 m-0 border p-4 fs-3 mx-auto text-center">
+                        <p class="m-0" id="hours"></p>
+                    </div>
+                    <div class="minute col-lg-2 m-0 border p-4 fs-3 mx-auto text-center">
+                        <p class="m-0" id="minutes"></p>
+                    </div>
+                    <div class="second col-lg-2 m-0 border p-4 fs-3 mx-auto text-center">
+                        <p class="m-0" id="seconds"></p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    <!--!=================>Contact<============================  -->
+    <section id="contact-us" class="py-5">
+        <div class="container">
+            <div class="start">
+                <h3>JOIN US</h3>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h6 class="text-capitalize">CONTACT INFO</h6>
+                    <p class="text-center pb-2">Why you should hire me writeup Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque nascetur
+                        ridiculus mus.</p>
+
+                    <div class="mails">
+                        <p class="d-flex align-items-center justify-content-center pb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-geo-alt-fill me-4" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                            </svg>
+                            New Street 22545, Nexa Road, New York City, USA
+                        </p>
+                        <p class="d-flex align-items-center justify-content-center pb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-envelope me-4" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                            </svg>
+                            <span class="text-danger">hello@uigrid.com</span>
+                        </p>
+                        <p class="d-flex align-items-center justify-content-center pb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-telephone-fill me-4" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                            </svg>
+                            001-000-000-000
+                        </p>
+                    </div>
+
+                    <div class="about-icon pt-5">
+                        <ul class="list-unstyled p-0 pt-2 gap-2 d-flex justify-content-start align-items-center">
+                            <li><i class="icon icon-twitter"></i></li>
+                            <li><i class="icon icon-facebook"></i></li>
+                            <li><i class="icon icon-instagram"></i></li>
+                            <li><i class="icon icon-dribbble"></i></li>
+                            <li><i class="icon icon-pinterest"></i></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <form>
+                        <input type="text" class="form-control mb-3" name="UserName" id="userNameInput"
+                            placeholder="Enter Name">
+                        <input type="email" class="form-control mb-3" name="UserEmail" id="userEmailInput"
+                            placeholder="Enter Email">
+                        <textarea oninput="updateCharacterCount()" id="myTextarea" class="form-control mb-3" name="UserMessage" cols="30" rows="7" placeholder="Enter Message"></textarea>
+                        <p id="charCountMessage" class="text-danger fs-5">
+                            <span id="charCount" class="fs-5">100</span>
+                            <span class="text-dark fs-6">Character Reamining</span>
+                        </p>
+
+
+                        <button style="display: block;" class="btn btn-danger py-2 px-3 mt-4"> Send Message </button>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
